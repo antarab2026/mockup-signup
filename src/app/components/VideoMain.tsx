@@ -96,53 +96,7 @@ export default function VideoMain() {
                         ))}
                     </nav>
 
-                    {/* <div className="flex items-center gap-4">
-                        <Menu as="div" className="relative">
-                            <MenuButton
-                                className="flex items-center gap-1 px-3 py-1 text-sm font-medium rounded"
-                                style={{ color: textColor }}
-                            >
-                                <span>Login</span>
-                                <HiOutlineChevronDown size={16} />
-                            </MenuButton>
-
-                            <MenuItems className="absolute right-0 mt-3 w-56 rounded-xl shadow-lg overflow-hidden border bg-white">
-                                <MenuItem>
-                                    {({ active }) => (
-                                        <a
-                                            href="#"
-                                            className={`block px-4 py-2 text-sm ${active ? "bg-gray-100" : ""}`}
-                                        >
-                                            Traveller Dashboard
-                                        </a>
-                                    )}
-                                </MenuItem>
-                                <MenuItem>
-                                    {({ active }) => (
-                                        <a
-                                            href="#"
-                                            className={`block px-4 py-2 text-sm ${active ? "bg-gray-100" : ""}`}
-                                        >
-                                            Agent / Provider
-                                        </a>
-                                    )}
-                                </MenuItem>
-                            </MenuItems>
-                        </Menu>
-
-                        <motion.a
-                            href="#"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.97 }}
-                            className="px-4 py-2 rounded-md font-medium shadow-md transition-colors duration-300"
-                            style={{
-                                backgroundColor: scrollRatio > 0.5 ? "#00AFEF" : "rgba(255,255,255,0.2)",
-                                color: "#fff",
-                            }}
-                        >
-                            Book Demo
-                        </motion.a>
-                    </div> */}
+                   
     <div className="flex items-center gap-4">
     {/* Login / Signup Hover Menu */}
     <div className="relative group">
@@ -183,6 +137,10 @@ export default function VideoMain() {
       if (item === "Agent") {
         router.push("/signup/agent");
       }
+      if (item === "Corporate") {
+        router.push("/signup/corporate");
+      }
+
     }}
     className="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
   >
